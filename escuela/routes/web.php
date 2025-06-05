@@ -6,8 +6,8 @@ use App\Http\Controllers\AlumnoController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/search', [AlumnoController::class, 'index'])->name('user.search');
-Route::post('/search', [AlumnoController::class, 'search'])->name('user.search.post');
+Route::get('/search', [AlumnoController::class, 'index'])->name('alumno.search');
+Route::post('/search', [AlumnoController::class, 'search'])->name('alumno.search.post');
 
 /*
 No hace falta usar funciones de edicion en este laravel
